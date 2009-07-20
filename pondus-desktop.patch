@@ -1,0 +1,14 @@
+--- pondus-0.6.0/data/pondus.desktop~	2009-07-20 09:45:16.000000000 +0200
++++ pondus-0.6.0/data/pondus.desktop	2009-07-20 09:45:16.000000000 +0200
+@@ -1,9 +1,10 @@
+ [Desktop Entry]
+-Version=1.0
+ Type=Application
+ Name=Pondus
+ Comment=Keep track of your weight
++Comment[pl]=Kontroluj swoją wagę
+ Icon=pondus
+ Exec=pondus
+ Categories=GTK;Utility;
+ Terminal=false
++# vi: encoding=utf-8
