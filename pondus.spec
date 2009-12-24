@@ -1,19 +1,19 @@
 Summary:	Personal weight management program
 Summary(pl.UTF-8):	Program do zarządzania własną wagą
 Name:		pondus
-Version:	0.6.0
+Version:	0.7.0
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	http://www.ephys.de/software/pondus/%{name}-%{version}.tar.gz
-# Source0-md5:	e2c822129b734d2574e962850cac8206
+# Source0-md5:	23d51b50f36303d2fa606bf0e1390be7
 Patch0:		%{name}-desktop.patch
 URL:		http://www.ephys.de/software/pondus/
 BuildRequires:	python-devel >= 2.4
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	python-matplotlib
-Requires:	python-pygtk-gtk >= 2.6
+Requires:	python-pygtk-gtk >= 2.12
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -25,10 +25,10 @@ simple weight planner allows to define "target weights".
 
 %description -l pl.UTF-8
 Pondus jest programem napisanym w Pythonie i Gtk+2 do zarządzania
-własną wagą. Ma on być łatwy w obsłudze, lekki i szybki. Dane
-mogą być przedstawione na wykresie, co umożliwia szybki przegląd
-historii wagi użytkownika. Prosty planista wagi umożliwia
-zdefiniowanie "zamierzonej wagi".
+własną wagą. Ma on być łatwy w obsłudze, lekki i szybki. Dane mogą być
+przedstawione na wykresie, co umożliwia szybki przegląd historii wagi
+użytkownika. Prosty planista wagi umożliwia zdefiniowanie "zamierzonej
+wagi".
 
 %prep
 %setup -q
@@ -68,5 +68,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{py_sitescriptdir}/pondus/gui
 %{py_sitescriptdir}/pondus/gui/*.py[co]
 %if "%{py_ver}" > "2.4"
-%{py_sitescriptdir}/pondus-0.6.0-py2.6.egg-info
+%{py_sitescriptdir}/pondus-*.egg-info
 %endif
