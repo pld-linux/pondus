@@ -1,12 +1,12 @@
 Summary:	Personal weight management program
 Summary(pl.UTF-8):	Program do zarządzania własną wagą
 Name:		pondus
-Version:	0.7.1
+Version:	0.7.2
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	http://bitbucket.org/eike/pondus/downloads/%{name}-%{version}.tar.gz
-# Source0-md5:	f452dea807f08f55d2d903b435247ed0
+# Source0-md5:	3d90d80a05f9e5b109c9e54e0813c3ea
 Patch0:		%{name}-desktop.patch
 URL:		http://www.ephys.de/software/pondus/
 BuildRequires:	python-devel >= 2.4
